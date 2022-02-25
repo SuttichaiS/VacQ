@@ -91,7 +91,8 @@ exports.deleteHospital = async (req,res,next) => {
 
         if(!hospital){
             return res.status(400).json({
-                success:false
+                success:false,
+                msg: 'Hospital Not Found!'
             });
         }
         res.status(200).json({
