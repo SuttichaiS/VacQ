@@ -23,6 +23,10 @@ exports.getHospitals = async (req,res,next) => {
     //Copy req.query
     const reqQuery = {...req.query};
 
+
+// console.log(reqQuery)
+
+
     //Fields to exclude
     const removeFields = ['select', 'sort', 'page', 'limit'];
 
